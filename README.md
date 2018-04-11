@@ -19,6 +19,9 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Contribution guidelines ###
 
+# run npm install package.json from react_flask/static folder.
+# run pip install requirements.txt from react_flask/server folder.
+
 * Writing tests
 * Code review
 * Other guidelines
