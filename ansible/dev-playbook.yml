@@ -1,0 +1,7 @@
+---
+- name: React Flask
+  hosts: dev-reactflask
+  become: yes
+  become_user: root
+  roles:
+    - react_flask

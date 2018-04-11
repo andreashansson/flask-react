@@ -1,0 +1,4 @@
+- include: react_flask.yml
+- include: react_flask_service.yml
+- include: nginx.yml
+  when: ansible_os_family == "Debian"
