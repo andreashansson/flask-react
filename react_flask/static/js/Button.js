@@ -17,21 +17,12 @@ export default class Button extends React.Component {
     });
   }
 
-  fetchData1() {
-    console.log("Button1 Click!");
-    fetch("/api")
-    .then(function(res) {
-      return res.json();
-    }).then(function(result) {
-      console.log(result);
-    });
-  }
 
   render () {
     return (
       <div>
-      <button onClick={this.fetchData("POST")}>Button1</button>
-      <button onClick={this.fetchData("GET")}>Button2</button>
+        <button onClick={this.fetchData("POST")}>Button1</button>
+        <button onClick={this.fetchData("GET")}>Button2</button>
       </div>
     )
   }
