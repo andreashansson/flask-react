@@ -6,10 +6,17 @@ const config = {
         filename: 'bundle.js',
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.css']
+        extensions: ['.js', '.jsx']
     },
     module: {
-        rules: [
+        rules: [{
+                test: /\.scss$/,
+                use: [
+                    {loader: "style-loader"},
+                    {loader: "css-loader"},
+                    {loader: "sass-loader"}
+                ]
+            },
             {
                 test: /\.jsx?/,
                 exclude: /node_modules/,
