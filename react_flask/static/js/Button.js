@@ -11,7 +11,7 @@ export default class Button extends React.Component {
   render () {
     return (
       <div>
-        <button onClick={this.props.fetch}>Button2</button>
+        <button onClick={this.props.funk}>Button2</button>
       </div>
     )
   }

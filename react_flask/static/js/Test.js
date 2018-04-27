@@ -5,3 +5,11 @@ export default class Test extends React.Component {
     return <p className="test"> Test!</p>;
   }
 }
+
+export var test = function() {
+  fetch("/test/andreas/", {method: "GET"}).then(function(response) {
+    return response.json();
+  }).then(function(result) {
+    console.log(result);
+  });
+}
