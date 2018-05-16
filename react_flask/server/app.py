@@ -1,18 +1,11 @@
 import flask
-import creator as creator
 
 app = flask.Flask(__name__, static_folder="../static/dist", template_folder="../static")
-
 
 @app.route("/")
 def index():
     return flask.render_template("index.html")
 
-
-@app.route('/test/<name>/')
-def test(name):
-    creator.test("hej")
-    return flask.jsonify({"response": name})
 
 @app.route('/api', methods=['POST', 'GET'])
 def api():
