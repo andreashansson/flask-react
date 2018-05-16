@@ -44,5 +44,9 @@ This README would normally document whatever steps are necessary to get your app
 #run react from this folder with npm run watch
 #react-fredagsmys/react_flask/static
 
-#run server from this folder with python4 app.py
+#run server from python3 virtualenv in path below
 #/home/anhansson/web/react-fredagsmys/react_flask/server
+
+virtualenv -p python3 venv
+source venv/bin/activate
+pip install -r requirements.txt

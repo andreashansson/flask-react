@@ -6,3 +6,4 @@ react_flask/static/node_modules/
 react_flask/static/v8-compile-cache-0/
 react_flask/static/dist/
 react_flask/server/config.json
+react_flask/server/venv
