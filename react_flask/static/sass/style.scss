@@ -35,18 +35,36 @@ header {
       }
     }
   }
+
   .right-header {
-    @media (max-width: 600px) {
-      .max-600-menu {
+    @media (max-width: 768px) {
+
+      div.ham-menu {
+        height: 24px;
+        img {
+          height: 100%;
+        }
+      }
+      ul.nav-menu {
         display: none;
       }
     }
-    ul {
-      list-style-type: none;
-      margin-bottom: 0;
-      padding-left: 0;
-      li {
-        display: inline;
+    @media (min-width: 768px) {
+
+      div.ham-menu {
+        display: none;
+      }
+
+      ul.nav-menu {
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        li {
+          display: inline;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-left: 1px dotted black;
+        }
       }
     }
   }
