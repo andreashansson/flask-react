@@ -8,7 +8,7 @@ const config = {
         filename: 'js/bundle.js',
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.scss']
     },
     plugins: [
         new CopyWebpackPlugin([
