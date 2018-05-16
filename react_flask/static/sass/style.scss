@@ -1,3 +1,26 @@
+header {
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+  }
+}
+
+footer {
+  height: auto;
+  overflow: hidden;
+  border-top: 1px solid black;
+  h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+  }
+
+}
+
 #content {
-  background-color: red;
+
 }

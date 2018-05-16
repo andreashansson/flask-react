@@ -10,9 +10,7 @@ export default class Button extends React.Component {
 
   render () {
     return (
-      <div>
-        <button onClick={this.props.funk}>Button2</button>
-      </div>
+      <button className="btn btn-primary" onClick={this.props.funk}>Button2</button>
     )
   }
 }
