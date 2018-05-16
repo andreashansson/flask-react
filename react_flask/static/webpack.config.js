@@ -1,13 +1,20 @@
 const webpack = require('webpack');
+var CopyWebpackPlugin = require("copy-webpack-plugin");
+
 const config = {
     entry:  __dirname + '/js/index.jsx',
     output: {
-        path: __dirname + '/dist/js',
-        filename: 'bundle.js',
+        path: __dirname + '/dist',
+        filename: 'js/bundle.js',
     },
     resolve: {
         extensions: ['.js', '.jsx']
     },
+    plugins: [
+        new CopyWebpackPlugin([
+            { from:"./images", to: "images"}
+        ])
+    ],
     module: {
         rules: [{
                 test: /\.scss$/,
