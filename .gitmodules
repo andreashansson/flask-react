@@ -1,3 +1,0 @@
-[submodule "react_flask/server/creator"]
-	path = react_flask/server/creator
-	url = ssh://andreas.hansson@review.icomera.com:29418/custom/chocolate/creator
