@@ -42,6 +42,7 @@
     ]
   },
   "dependencies": {
+    "package.json": "^2.0.1",
     "superagent": "^3.8.2"
   }
 }
