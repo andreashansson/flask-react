@@ -1,5 +1,5 @@
 import React from 'react';
-export default class Button extends React.Component {
+export default class App extends React.Component {
 
   constructor(props) {
     super(props);
@@ -12,13 +12,14 @@ export default class Button extends React.Component {
     return (
       <header>
         <div className="left-header">
-          <div className="header-logo-container"><img src="dist/images/antihero-logo.png" /></div>
+          <div className="header-logo-container"><img src="dist/images/annas-hostel.png" /></div>
         </div>
         <div className="right-header">
           <div className="ham-menu">
             <img src="dist/images/menu.png" />
           </div>
           <ul className="nav-menu">
+            <li onClick={this.props.test}>TEST</li>
             <li onClick={this.props.home}>HOME</li>
             <li onClick={this.props.info}>INFO</li>
             <li onClick={this.props.booking}>BOOKING</li>

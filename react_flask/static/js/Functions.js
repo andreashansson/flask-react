@@ -1,4 +1,12 @@
 export var functions = {
+  test: function() {
+    console.log("TEST");
+    fetch("/api", {method: "POST"}).then(function(response) {
+    return response.json();
+    }).then(function(result) {
+      console.log(result);
+    });
+  },
   home: function() {
     console.log("HOME");
   },
