@@ -15,10 +15,10 @@ export default class App extends React.Component {
           <div className="header-logo-container"><img src="dist/images/annas-hostel.png" /></div>
         </div>
         <div className="right-header">
-          <div className="ham-menu">
+          <div onClick={this.props.menu} id="menu-button" className="ham-menu">
             <img src="dist/images/menu.png" />
           </div>
-          <ul className="nav-menu">
+          <ul id="menu" className="nav-menu">
             <li onClick={this.props.test}>TEST</li>
             <li onClick={this.props.home}>HOME</li>
             <li onClick={this.props.info}>INFO</li>
